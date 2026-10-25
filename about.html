@@ -7,6 +7,14 @@
   <meta name="description" content="How to use Reflection: one deep question a day, answered on paper. No account, nothing saved." />
   <meta name="theme-color" content="#f6f4ee" />
 
+  <!-- Install as an app (PWA). -->
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Reflection" />
+
   <link rel="preconnect" href="https://api.fontshare.com" />
   <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin />
   <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700,800&display=swap" rel="stylesheet" />
@@ -151,5 +159,7 @@
       <a class="nav-link" href="https://github.com/dataandbytes/reflection" target="_blank" rel="noopener">View the source</a>
     </footer>
   </article>
+
+  <script src="js/pwa.js"></script>
 </body>
 </html>
