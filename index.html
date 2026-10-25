@@ -5,20 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Reflection</title>
   <meta name="description" content="One deep question a day. You answer in a notebook, not here. No account, nothing saved." />
-  <meta name="theme-color" content="#f4ece0" />
+  <meta name="theme-color" content="#f6f4ee" />
 
-  <!-- A quiet serif for the question, a clean sans for everything small. -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Switzer — the Snowpeak typeface (free, via Fontshare). -->
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin />
+  <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700,800&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <main class="stage">
     <header class="masthead">
-      <span class="brand">Reflection</span>
-      <span class="date" id="date"></span>
+      <div class="brand">
+        <span class="brand-mark">Reflection</span>
+        <span class="brand-sub">A question a day</span>
+      </div>
+      <div class="masthead-right">
+        <span class="date" id="date"></span>
+        <a class="nav-link" href="about.html">How it works</a>
+      </div>
     </header>
 
     <section class="prompt">
@@ -31,7 +37,10 @@
         Don't answer here. Take a pen and your notebook,
         and give this the time it asks for.
       </p>
-      <button class="link-btn" id="openReminder" type="button">Set a daily time</button>
+      <div class="ritual-actions">
+        <button class="btn-dark" id="openReminder" type="button">Set a daily time</button>
+        <a class="nav-link" href="about.html">Read how it works</a>
+      </div>
     </footer>
   </main>
 
@@ -48,8 +57,8 @@
         <span>Time</span>
         <input type="time" id="time" value="21:00" />
       </label>
-      <button class="primary-btn" id="downloadIcs" type="button">Add daily reminder to calendar</button>
-      <button class="link-btn close" id="closeReminder" type="button">Not now</button>
+      <button class="btn-dark btn-block" id="downloadIcs" type="button">Add daily reminder to calendar</button>
+      <button class="nav-link close" id="closeReminder" type="button">Not now</button>
     </div>
   </div>
 
