@@ -111,6 +111,8 @@ body {
 .link-btn:hover { border-bottom-color: var(--accent); }
 
 /* ── Reminder sheet ─────────────────────────────────────────────── */
+.sheet-backdrop[hidden] { display: none; }
+
 .sheet-backdrop {
   position: fixed;
   inset: 0;
