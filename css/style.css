@@ -163,6 +163,25 @@ a { color: inherit; }
 }
 .nav-link:hover { color: var(--ink); border-bottom-color: var(--ink); }
 
+/* Install hint — only shown (via JS) when the browser offers to install. */
+.install-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: none;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  cursor: pointer;
+  transition: border-color 0.18s ease, color 0.18s ease;
+}
+.install-hint:hover { border-color: var(--ink); color: var(--ink); }
+.install-hint[hidden] { display: none; }
+
 /* ── Reminder sheet ─────────────────────────────────────────────── */
 .sheet-backdrop[hidden] { display: none; }
 .sheet-backdrop {
